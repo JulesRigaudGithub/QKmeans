@@ -6,8 +6,10 @@ import datetime
 import matplotlib.pyplot as plt
 from sklearn import metrics
 from qiskit import QuantumCircuit, QuantumRegister, ClassicalRegister, execute, Aer, transpile
-from qiskit.providers.aer import StatevectorSimulator
-from qiskit.providers.ibmq import least_busy
+# from qiskit.providers.aer import StatevectorSimulator
+from qiskit_aer import StatevectorSimulator
+# from qiskit.providers.ibmq import least_busy
+from qiskit_ibm_provider import least_busy
 from qiskit.tools.monitor import job_monitor
 from qiskit import IBMQ
 from sklearn.preprocessing import StandardScaler, normalize
